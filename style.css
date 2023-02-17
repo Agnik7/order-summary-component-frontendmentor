@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+.card{
+    max-width: 380px;
+    min-width: 330px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+}
+h2, .description{
+    text-align: center;
+}
+h2{
+    margin: 2rem 0rem 1rem;
+}
+.description{
+    margin: 0rem 2rem 0rem;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+img{
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 3rem;
+    margin: 2rem 3rem 2rem;
+}
+.plans{
+    display: flex;
+    flex-direction: row;
+}
+.plans img{
+    margin-right: 1rem;
+    /* height: 90%;
+    width: 90%; */
+}
+.annual{
+    width: 100%;
+}
+a{
+    color: hsl(245, 75%, 52%);
+    margin: 0.5rem 0rem 0.5rem;
+}
+a:hover{
+    color: hsl(224, 23%, 55%);
+}
+#text{
+    width: 6rem;
+    margin-bottom: 0.5rem;
+}
+#amount{
+    color: hsl(224, 23%, 55%);
+}
+button{
+    margin: 0rem 3rem 0rem;
+    padding: 1rem 3rem 1rem;
+    background-color: hsl(245, 75%, 52%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+button:hover {
+    background-color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+.cancel{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    margin: 1rem 3rem 2rem;
+}
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+@media (max-width: 375px) {
+    body{
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+}
