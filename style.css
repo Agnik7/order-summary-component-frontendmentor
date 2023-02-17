@@ -38,6 +38,8 @@ img{
 .price{
     display: flex;
     flex-direction: row;
+    background-color: hsl(225, 100%, 94%);
+    border: 1rem solid hsl(225, 100%, 94%);
     /* justify-content: space-between; */
     gap: 3rem;
     margin: 2rem 3rem 2rem;
